@@ -16,6 +16,7 @@ docker **images**
 * **-p**: port mapping
 * **image-name**: base image
 * **bash**: optional command to run at instance time
+
 docker **run** --name container-name -p 8888:8888 image-name bash
 ### Other options:
 * **-i**: Keep STDIN open even if not attached
@@ -32,6 +33,8 @@ docker **start** container
 ## Execute a command from a existing image
 * **-i**: Keep STDIN open even if not attached
 * **-t**: Allocate a pseudo-TTY
+* **-u root** Run as root
+
 docker **exec** -it container-name command
 
 ## List running containers
