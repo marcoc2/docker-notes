@@ -45,3 +45,6 @@ docker **stop** container
 
 ## Remove container
 docker **rm** container
+
+## Remove image
+docker **rmi** image
