@@ -7,22 +7,22 @@ Docker command lists for basic/common usage
 * **dockerfile**: file that describes all the steps needed to build a docker image
 
 ## List running containers
-docker **ps**
+**$** docker **ps**
 
 ## List all containers
-docker **ps** -a
+**$** docker **ps** -a
 
 ## Stop container
-docker **stop** container
+**$** docker **stop** container
 
 ## Remove container
-docker **rm** container
+**$** docker **rm** container
 
 ## Get an image from Docker Hub
-docker **pull** image-name
+**$** docker **pull** image-name
 
 ## List available images
-docker **images**
+**$** docker **images**
 
 ## Run a container from a image (create the instance)
 * **--name**: container name
@@ -30,7 +30,7 @@ docker **images**
 * **image-name**: base image
 * **bash**: optional command to run at instance time
 
-docker **run** --name container-name -p 8888:8888 image-name bash
+**$** docker **run** --name container-name -p 8888:8888 image-name bash
 ### Other options:
 * **-i**: Keep STDIN open even if not attached
 * **-t**: Allocate a pseudo-TTY
@@ -41,14 +41,14 @@ docker **run** --name container-name -p 8888:8888 image-name bash
 * **--privileged**: Give extended privileges to this container
 
 ## Starts a container (make it ready for usage)
-docker **start** container
+**$** docker **start** container
 
 ## Execute a command from a existing image
 * **-i**: Keep STDIN open even if not attached
 * **-t**: Allocate a pseudo-TTY
 * **-u root** Run as root
 
-docker **exec** -it container-name command
+**$** docker **exec** -it container-name command
 
 ## Remove image
-docker **rmi** image
+**$** docker **rmi** image
