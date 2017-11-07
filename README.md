@@ -1,9 +1,22 @@
 # docker-notes
 Docker command lists for basic/common usage
 
+## Concepts:
 * **images**: saved state of the container
 * **container**: instance of a image
 * **dockerfile**: file that describes all the steps needed to build a docker image
+
+## List running containers
+docker **ps**
+
+## List all containers
+docker **ps** -a
+
+## Stop container
+docker **stop** container
+
+## Remove container
+docker **rm** container
 
 ## Get an image from Docker Hub
 docker **pull** image-name
@@ -36,18 +49,6 @@ docker **start** container
 * **-u root** Run as root
 
 docker **exec** -it container-name command
-
-## List running containers
-docker **ps**
-
-## List all containers
-docker **ps** -a
-
-## Stop container
-docker **stop** container
-
-## Remove container
-docker **rm** container
 
 ## Remove image
 docker **rmi** image
