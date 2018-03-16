@@ -52,3 +52,13 @@ Docker command lists for basic/common usage
 
 ## Remove image
 **$** docker **rmi** image
+
+## Issues and Solutions
+If the following error appear trying to open a app with ui interface
+
+No protocol specified
+QXcbConnection: Could not connect to display :0
+Aborted (core dumped)
+
+execute this command outside docker:
+**$** xhost +local:docker
