@@ -56,9 +56,9 @@ Docker command lists for basic/common usage
 ## Issues and Solutions
 If the following error appear trying to open a app with ui interface
 
-No protocol specified
+_No protocol specified
 QXcbConnection: Could not connect to display :0
-Aborted (core dumped)
+Aborted (core dumped)_
 
 execute this command outside docker:
 **$** xhost +local:docker
