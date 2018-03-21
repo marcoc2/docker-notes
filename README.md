@@ -61,4 +61,5 @@ QXcbConnection: Could not connect to display :0
 Aborted (core dumped)_
 
 execute this command outside docker:
+
 **$** xhost +local:docker
