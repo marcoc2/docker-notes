@@ -59,6 +59,12 @@ Docker command lists for basic/common usage
 ## List dangling images
 **$** docker images **-f dangling=true**
 
+## Purge all dangling images, containers, volumes, and networks
+**$** docker **system prune**
+
+## Remove any stopped containers and all unused images (not just dangling images)
+**$** docker **system prune -a**
+
 ## Issues and Solutions
 If the following error appear trying to open a app with ui interface
 
