@@ -53,6 +53,12 @@ Docker command lists for basic/common usage
 ## Remove image
 **$** docker **rmi** image
 
+## Remove dangling images
+**$** docker images **purge**
+
+## List dangling images
+**$** docker images **-f dangling=true**
+
 ## Issues and Solutions
 If the following error appear trying to open a app with ui interface
 
