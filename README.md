@@ -34,6 +34,7 @@ Docker command lists for basic/common usage
 ### Other options:
 * **-i**: Keep STDIN open even if not attached
 * **-t**: Allocate a pseudo-TTY
+* **-d**: Detached mode: run command in the background
 * **-e**: Set environment variables (ex.: DISPLAY=$DISPLAY)
 * **-u**: Username or UID (format: <name|uid>[:<group|gid>]) (ex.: $(id -u):$(id -g))
 * **-v**: Bind mount a volume (ex.: ~/projects:/projects)
@@ -46,6 +47,7 @@ Docker command lists for basic/common usage
 ## Execute a command from a existing image
 * **-i**: Keep STDIN open even if not attached
 * **-t**: Allocate a pseudo-TTY
+* **-d**: Detached mode: run command in the background
 * **-u root** Run as root
 
 **$** docker **exec** -it container-name command
