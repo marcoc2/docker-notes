@@ -25,7 +25,7 @@ Docker command lists for basic/common usage
 **$** docker **images**
 
 ## Create a container from a image (create the instance)
-**$** docker **create** --name container-name
+**$** docker **create** --name container-name image-name
 
 ## Run a container from a image (create instance and run)
 * **--name**: container name
