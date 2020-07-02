@@ -27,6 +27,9 @@ Docker command lists for basic/common usage
 ## Create a container from a image (create the instance)
 **$** docker **create** --name container-name image-name
 
+### Pratical example:
+**$** nvidia-docker create -i -t -v <external-folder>:/workspace --cap-add=SYS_PTRACE --security-opt seccomp=unconfined -e DISPLAY=$DISPLAY --device=/dev/video0:/dev/video0 --privileged -v /tmp/.X11-unix:/tmp/.X11-unix:rw --name <new-container-name> <image-name:tag>
+
 ## Run a container from a image (create instance and run)
 * **--name**: container name
 * **-p**: port mapping
